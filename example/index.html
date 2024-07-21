@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Dart to JavaScript Example</title>
+</head>
+
+<body>
+   <p>Here are data coming from the dart app:</p>
+   <p>name: <span id="name"></span></p>
+   <p>age: <span id="age"></span></p>
+   <p>isAwesome: <span id="isAwesome"></span></p>
+   <p>getWisdom(1): <span id="getWisdom1"></span></p>
+   <p>getWisdom(99): <span id="getWisdom99"></span></p>
+   <p>getWisdom(40): <span id="getWisdom40"></span></p>
+   <script src="../out/dauri.js"></script>
+   <script>
+      // Now you can access the properties in JavaScript:
+      console.log(window.dartApp); // Should log the instance
+      document.getElementById("name").innerHTML = dartApp.name
+      document.getElementById("age").innerHTML = dartApp.age
+      document.getElementById("isAwesome").innerHTML = dartApp.isAwesome
+      document.getElementById("getWisdom1").innerHTML = dartApp.getWisdom(1)
+      document.getElementById("getWisdom99").innerHTML = dartApp.getWisdom(99)
+      document.getElementById("getWisdom40").innerHTML = dartApp.getWisdom(40)
+   </script>
+</body>
+
+</html>
