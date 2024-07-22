@@ -24,7 +24,7 @@ At the time of writing, it doesn't work in node.js:
 uncaught referenceerror: self is not defined
 ```
 
-...but it does work in the browser – see the [example/] folder.
+...but it does work in the browser – see the example/ folder.
 
 I believe it's possible to expose functions and class instances to JS, but not classes themselves. I suppose you cannot directly expose a constructor, but you definitely can write a function or method that returns an instance, and expose that:
 
@@ -45,10 +45,10 @@ dart create -t package dauri  # create a new Dart project
 dart pub add web  # add dependency to pubspec.yaml and install it
 ```
 
-In the lib/src/ directory, write your library and
+In the `lib/src/` directory, write your library and
 [mark your classes and functions with @JSExport](https://api.dart.dev/stable/3.4.4/dart-js_interop/JSExport-class.html).
 
-In the lib/ directory, write a main() function that exposes the API (see lib/dauri.dart).
+In the `lib/` directory, write a `main()` function that exposes the API (see `lib/dauri.dart`).
 
 
 ## WASM
@@ -63,7 +63,7 @@ That Flutter page says:
 
 ## Dart vs TypeScript
 
-Most people will tell you to build JS libraries in TypeScript. But TypeScript unfortunately inherits the main problems with JavaScript: new, this, class... you know these problems [and others](https://www.destroyallsoftware.com/talks/wat). Javascript really is a language that makes kittens cry every day. TypeScript is a superset of Javascript, and this is both its strength and its weakness.
+Most people will tell you to build JS libraries in TypeScript. But TypeScript unfortunately inherits the main problems with JavaScript: `new`, `this`, `class`... you know these problems [and others](https://www.destroyallsoftware.com/talks/wat). Javascript really is a language that makes kittens cry every day. TypeScript is a superset of Javascript, and this is both its strength and its weakness.
 
 TypeScript assumes you are writing classes. But its syntax for writing classes is terribly verbose. I see myself writing the names of the instance variables 4 (FOUR!) times just to get a constructor going...
 
@@ -71,11 +71,13 @@ The typing annotations in TypeScript are also difficult, you have to spend a lon
 
 There are a few alternative languages, such as Elixir, that compile to JS and/or WebAssembly. But many of these are strictly functional (such as Elixir), and currently I have this idea in my big head, that purely functional languages are great for many purposes, but for building user interfaces what you really want is an object-oriented language.
 
-In contrast, Dart is a boring, no-nonsense, no-surprises, clean, multipurpose OO language that works well for building user interfaces. But to use Dart you pay with a more difficult interop, exemplified in this repo. Which is worse, TypeScript boilerplate and difficult typing, or Dart interop? It depends on what you are doing, of course.
+In contrast, Dart is a boring, no-nonsense, no-surprises, clean, ergonomic, multipurpose OO language that works well for building user interfaces. But to use Dart you pay with a more difficult interop, exemplified in this repo.
+
+Which is worse, TypeScript boilerplate and difficult typing, or Dart interop? It depends on what you are doing, of course.
 
 The page loads instantaneously, the runtime is small enough.
 
-Here are the bundle sizes for this, I am not sure what a typical hello world weighs in TypeScript to compare:
+Here are the bundle sizes for this:
 
 - 157 KB when compiled with the default optimizations level 1: `-O1`.
 - 57 KB when compiled with safe production-oriented optimizations (like minification).
@@ -84,6 +86,8 @@ Here are the bundle sizes for this, I am not sure what a typical hello world wei
 
 Although the last 3 are very close numbers, they might drift apart if more Dart code is added.
 
+I am not sure what a typical hello world weighs in TypeScript to compare.
+
 Those starting bundle sizes are very acceptable to me if you are building an app. If you are building a library, it depends on the nature of the library. For small things, nope, just use TypeScript.
 
-I wouldn't build a generic small JavaScript library this way; but what I want to build is something different: the core of an app (in Dart) to be used by a reactive GUI (written in JS with MithrilJS). I believe the pleasure of writing Dart instead of TypeScript may be worth the interop burden, especially if this burden is minimal, like when you have zero to very few JS libraries you want to call from Dart.
+I wouldn't build a generic small JavaScript library this way; but what I want to build is something different: the core of an app (in Dart) to be used by a reactive GUI (written in JS with [MithrilJS](https://mithril.js.org/), an awesome small reactive library). I believe the pleasure of writing Dart instead of TypeScript may be worth the interop burden, especially if this burden is minimal, like when you have zero to very few JS libraries you want to call from Dart.
