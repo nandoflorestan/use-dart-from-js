@@ -1,7 +1,7 @@
 library;
 
 import 'dart:js_interop'; // contains JS types such as JSAny, JSArray etc.
-import 'dart:js_interop_unsafe';
+import 'dart:js_interop_unsafe'; // contains window.setProperty()
 
 import 'package:web/web.dart' as web;
 

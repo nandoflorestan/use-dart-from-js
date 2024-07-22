@@ -26,7 +26,11 @@ uncaught referenceerror: self is not defined
 
 ...but it does work in the browser – see the [example/] folder.
 
-I believe it's possible to expose functions and class instances to JS, but not classes themselves. I suppose if you want to expose a constructor you need to write a function that returns an instance and expose that. If I am wrong, please do let me know.
+I believe it's possible to expose functions and class instances to JS, but not classes themselves. I suppose you cannot directly expose a constructor, but you definitely can write a function or method that returns an instance, and expose that:
+
+    JSObject factory() => createJSInteropWrapper(MyExposableClass());
+
+If I am wrong, please do let me know.
 
 
 ## Getting started
@@ -78,6 +82,8 @@ Here are the bundle sizes for this, I am not sure what a typical hello world wei
 - 55 KB when compiled with potentially unsafe optimizations: `-O3`.
 - 55 KB when compiled with more aggressively unsafe optimizations: `-O4`.
 
+Although the last 3 are very close numbers, they might drift apart if more Dart code is added.
+
 Those starting bundle sizes are very acceptable to me if you are building an app. If you are building a library, it depends on the nature of the library. For small things, nope, just use TypeScript.
 
-I wouldn't build a generic small JavaScript library this way; but what I want to build is something different: the core of an app (in Dart) to be used by a reactive GUI (written in JS with MithrilJS). I believe the pleasure of writing Dart instead of TypeScript may be worth the interop burden, especially if this burden is minimal, meaning you must have zero to very few JS libraries you want to call from Dart.
+I wouldn't build a generic small JavaScript library this way; but what I want to build is something different: the core of an app (in Dart) to be used by a reactive GUI (written in JS with MithrilJS). I believe the pleasure of writing Dart instead of TypeScript may be worth the interop burden, especially if this burden is minimal, like when you have zero to very few JS libraries you want to call from Dart.

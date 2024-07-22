@@ -2894,9 +2894,26 @@
     main__closure1: function main__closure1(t0) {
       this._dartInstance = t0;
     },
+    main__closure2: function main__closure2(t0) {
+      this._dartInstance = t0;
+    },
     main_closure: function main_closure() {
     },
     DartApp: function DartApp() {
+    },
+    DartApp_factory__closure: function DartApp_factory__closure(t0) {
+      this._dartInstance = t0;
+    },
+    DartApp_factory__closure0: function DartApp_factory__closure0(t0) {
+      this._dartInstance = t0;
+    },
+    DartApp_factory__closure1: function DartApp_factory__closure1(t0) {
+      this._dartInstance = t0;
+    },
+    DartApp_factory__closure2: function DartApp_factory__closure2(t0) {
+      this._dartInstance = t0;
+    },
+    DartApp_factory_closure: function DartApp_factory_closure() {
     },
     throwLateFieldADI(fieldName) {
       A.throwExpressionWithWrapper(new A.LateError("Field '" + fieldName + "' has been assigned during initialization."), new Error());
@@ -3272,7 +3289,7 @@
       B.JSArray_methods.add$1(this.$arguments, argument);
       ++t1.argumentCount;
     },
-    $signature: 0
+    $signature: 5
   };
   A.Closure.prototype = {
     toString$0(_) {
@@ -3458,19 +3475,19 @@
     call$1(o) {
       return this.getTag(o);
     },
-    $signature: 1
+    $signature: 6
   };
   A.initHooks_closure0.prototype = {
     call$2(o, tag) {
       return this.getUnknownTag(o, tag);
     },
-    $signature: 2
+    $signature: 7
   };
   A.initHooks_closure1.prototype = {
     call$1(tag) {
       return this.prototypeForTag(A._asString(tag));
     },
-    $signature: 3
+    $signature: 8
   };
   A.NativeByteBuffer.prototype = {
     get$runtimeType(receiver) {
@@ -3643,7 +3660,7 @@
       t2 = A.S(v);
       t1._contents += t2;
     },
-    $signature: 4
+    $signature: 9
   };
   A._UnmodifiableMapMixin.prototype = {};
   A.MapView.prototype = {
@@ -3674,7 +3691,7 @@
       t1._contents += t3;
       t2.comma = ", ";
     },
-    $signature: 5
+    $signature: 10
   };
   A.Error.prototype = {};
   A.AssertionError.prototype = {
@@ -3827,23 +3844,29 @@
     call$0() {
       return true;
     },
-    $signature: 6
+    $signature: 0
   };
   A.main__closure0.prototype = {
     call$0() {
       return "La Dart-Aplika\u0135o";
     },
-    $signature: 7
+    $signature: 1
   };
   A.main__closure1.prototype = {
     call$0() {
       return 48;
     },
-    $signature: 8
+    $signature: 2
+  };
+  A.main__closure2.prototype = {
+    call$0() {
+      return B.Type_DartApp_qC7;
+    },
+    $signature: 3
   };
   A.main_closure.prototype = {
     call$0() {
-      var _isAwesomeMapping, t4, t5, _nameMapping, _ageMapping,
+      var _isAwesomeMapping, t4, t5, _nameMapping, _ageMapping, _klassMapping,
         _dartInstance = new A.DartApp(),
         t1 = type$.JSObject,
         t2 = t1._as(self),
@@ -3864,31 +3887,109 @@
       t5 = t1._as(t2.Object);
       _ageMapping = t1._as(t5.create.apply(t5, [null]));
       _ageMapping.get = t4._as(A.allowInterop(new A.main__closure1(_dartInstance), t3));
-      t2 = t1._as(t2.Object);
-      t2.defineProperty.apply(t2, [_jsExporter, "age", _ageMapping]);
+      t5 = t1._as(t2.Object);
+      t5.defineProperty.apply(t5, [_jsExporter, "age", _ageMapping]);
       _jsExporter.getWisdom = t4._as(A.allowInterop(_dartInstance.get$getWisdom(), t3));
+      t5 = t1._as(t2.Object);
+      _klassMapping = t1._as(t5.create.apply(t5, [null]));
+      _klassMapping.get = t4._as(A.allowInterop(new A.main__closure2(_dartInstance), t3));
+      t2 = t1._as(t2.Object);
+      t2.defineProperty.apply(t2, [_jsExporter, "klass", _klassMapping]);
+      _jsExporter.factoryWeird = t4._as(A.allowInterop(_dartInstance.get$factoryWeird(), t3));
+      _jsExporter.factory = t4._as(A.allowInterop(_dartInstance.get$factory(), t3));
       return _jsExporter;
     },
-    $signature: 9
+    $signature: 4
   };
   A.DartApp.prototype = {
     getWisdom$1(n) {
       A._asInt(n);
-      if (n < 6)
+      if (n < 16)
         return "Tu \xe9s o que n\xe3o \xe9s.";
-      else if (n > 44)
-        return "You are that which you aren't.";
-      else
+      else if (n > 47)
         return "Vi estas tio, kio vi ne estas.";
+      else
+        return "You are that which you aren't.";
+    },
+    factoryWeird$0() {
+      return new A.DartApp();
+    },
+    factory$0() {
+      return new A.DartApp_factory_closure().call$0();
     }
+  };
+  A.DartApp_factory__closure.prototype = {
+    call$0() {
+      return true;
+    },
+    $signature: 0
+  };
+  A.DartApp_factory__closure0.prototype = {
+    call$0() {
+      return "La Dart-Aplika\u0135o";
+    },
+    $signature: 1
+  };
+  A.DartApp_factory__closure1.prototype = {
+    call$0() {
+      return 48;
+    },
+    $signature: 2
+  };
+  A.DartApp_factory__closure2.prototype = {
+    call$0() {
+      return B.Type_DartApp_qC7;
+    },
+    $signature: 3
+  };
+  A.DartApp_factory_closure.prototype = {
+    call$0() {
+      var _isAwesomeMapping, t4, t5, _nameMapping, _ageMapping, _klassMapping,
+        _dartInstance = new A.DartApp(),
+        t1 = type$.JSObject,
+        t2 = t1._as(self),
+        t3 = t1._as(t2.Object),
+        _jsExporter = t1._as(t3.create.apply(t3, [null]));
+      t3 = t1._as(t2.Object);
+      _isAwesomeMapping = t1._as(t3.create.apply(t3, [null]));
+      t3 = type$.Function;
+      t4 = type$.JavaScriptFunction;
+      _isAwesomeMapping.get = t4._as(A.allowInterop(new A.DartApp_factory__closure(_dartInstance), t3));
+      t5 = t1._as(t2.Object);
+      t5.defineProperty.apply(t5, [_jsExporter, "isAwesome", _isAwesomeMapping]);
+      t5 = t1._as(t2.Object);
+      _nameMapping = t1._as(t5.create.apply(t5, [null]));
+      _nameMapping.get = t4._as(A.allowInterop(new A.DartApp_factory__closure0(_dartInstance), t3));
+      t5 = t1._as(t2.Object);
+      t5.defineProperty.apply(t5, [_jsExporter, "name", _nameMapping]);
+      t5 = t1._as(t2.Object);
+      _ageMapping = t1._as(t5.create.apply(t5, [null]));
+      _ageMapping.get = t4._as(A.allowInterop(new A.DartApp_factory__closure1(_dartInstance), t3));
+      t5 = t1._as(t2.Object);
+      t5.defineProperty.apply(t5, [_jsExporter, "age", _ageMapping]);
+      _jsExporter.getWisdom = t4._as(A.allowInterop(_dartInstance.get$getWisdom(), t3));
+      t5 = t1._as(t2.Object);
+      _klassMapping = t1._as(t5.create.apply(t5, [null]));
+      _klassMapping.get = t4._as(A.allowInterop(new A.DartApp_factory__closure2(_dartInstance), t3));
+      t2 = t1._as(t2.Object);
+      t2.defineProperty.apply(t2, [_jsExporter, "klass", _klassMapping]);
+      _jsExporter.factoryWeird = t4._as(A.allowInterop(_dartInstance.get$factoryWeird(), t3));
+      _jsExporter.factory = t4._as(A.allowInterop(_dartInstance.get$factory(), t3));
+      return _jsExporter;
+    },
+    $signature: 4
   };
   (function aliases() {
     var _ = J.LegacyJavaScriptObject.prototype;
     _.super$LegacyJavaScriptObject$toString = _.toString$0;
   })();
   (function installTearOffs() {
-    var _instance_1_u = hunkHelpers._instance_1u;
-    _instance_1_u(A.DartApp.prototype, "get$getWisdom", "getWisdom$1", 10);
+    var _instance_1_u = hunkHelpers._instance_1u,
+      _instance_0_u = hunkHelpers._instance_0u;
+    var _;
+    _instance_1_u(_ = A.DartApp.prototype, "get$getWisdom", "getWisdom$1", 11);
+    _instance_0_u(_, "get$factoryWeird", "factoryWeird$0", 12);
+    _instance_0_u(_, "get$factory", "factory$0", 13);
   })();
   (function inheritance() {
     var _mixin = hunkHelpers.mixin,
@@ -3920,7 +4021,7 @@
     _inheritMany(A.NativeTypedArrayOfInt, [A.NativeInt16List, A.NativeInt32List, A.NativeInt8List, A.NativeUint16List, A.NativeUint32List, A.NativeUint8ClampedList, A.NativeUint8List]);
     _inherit(A._TypeError, A._Error);
     _inheritMany(A.ArgumentError, [A.RangeError, A.IndexError]);
-    _inheritMany(A.Closure0Args, [A.main__closure, A.main__closure0, A.main__closure1, A.main_closure]);
+    _inheritMany(A.Closure0Args, [A.main__closure, A.main__closure0, A.main__closure1, A.main__closure2, A.main_closure, A.DartApp_factory__closure, A.DartApp_factory__closure0, A.DartApp_factory__closure1, A.DartApp_factory__closure2, A.DartApp_factory_closure]);
     _mixin(A._NativeTypedArrayOfDouble_NativeTypedArray_ListMixin, A.ListBase);
     _mixin(A._NativeTypedArrayOfDouble_NativeTypedArray_ListMixin_FixedLengthListMixin, A.FixedLengthListMixin);
     _mixin(A._NativeTypedArrayOfInt_NativeTypedArray_ListMixin, A.ListBase);
@@ -3931,7 +4032,7 @@
     typeUniverse: {eC: new Map(), tR: {}, eT: {}, tPV: {}, sEA: []},
     mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List", Object: "Object", Map: "Map"},
     mangledNames: {},
-    types: ["~(String,@)", "@(@)", "@(@,String)", "@(String)", "~(Object?,Object?)", "~(Symbol0,@)", "bool()", "String()", "int()", "Object()", "String(int)"],
+    types: ["bool()", "String()", "int()", "Type()", "Object()", "~(String,@)", "@(@)", "@(@,String)", "@(String)", "~(Object?,Object?)", "~(Symbol0,@)", "String(int)", "DartApp()", "JSObject()"],
     interceptorsByTag: null,
     leafTags: null,
     arrayRti: Symbol("$ti")
@@ -4111,6 +4212,7 @@
     B.Symbol_call = new A.Symbol("call");
     B.Type_ByteBuffer_EOZ = A.typeLiteral("ByteBuffer");
     B.Type_ByteData_mF8 = A.typeLiteral("ByteData");
+    B.Type_DartApp_qC7 = A.typeLiteral("DartApp");
     B.Type_Float32List_Ymk = A.typeLiteral("Float32List");
     B.Type_Float64List_Ymk = A.typeLiteral("Float64List");
     B.Type_Int16List_cot = A.typeLiteral("Int16List");
