@@ -6,24 +6,32 @@
 </head>
 
 <body>
-   <p>Here are data coming from the dart app:</p>
-   <p>name: <span id="name"></span></p>
-   <p>age: <span id="age"></span></p>
-   <p>isAwesome: <span id="isAwesome"></span></p>
-   <p>getWisdom(1): <span id="getWisdom1"></span></p>
+   <h1>Dart to JS example, 2024</h1>
+   <p><strong>Here are Dart data as read by JS:</strong></p>
+   <p>boolGetter: <span id="boolGetter"></span></p>
+   <p>stringGetter: <span id="stringGetter"></span></p>
+   <p>intGetter: <span id="intGetter"></span></p>
+   <p>doubleField: <span id="doubleField"></span></p>
+   <p>listField: <span id="listField"></span></p>
+   <p>getWisdom(-1): <span id="getWisdom1"></span></p>
+   <p>getWisdom(9): <span id="getWisdom9"></span></p>
    <p>getWisdom(99): <span id="getWisdom99"></span></p>
-   <p>getWisdom(40): <span id="getWisdom40"></span></p>
    <script src="../out/dauri.js"></script>
    <script>
       // Now you can access the properties in JavaScript:
       console.log(window.dartApp); // Should log the instance
-      document.getElementById("name").innerHTML = dartApp.name
-      document.getElementById("age").innerHTML = dartApp.age
-      document.getElementById("isAwesome").innerHTML = dartApp.isAwesome
-      document.getElementById("getWisdom1").innerHTML = dartApp.getWisdom(1)
+      document.getElementById("boolGetter").innerHTML = dartApp.boolGetter
+      document.getElementById("stringGetter").innerHTML = dartApp.stringGetter
+      document.getElementById("intGetter").innerHTML = dartApp.intGetter
+      document.getElementById("doubleField").innerHTML = dartApp.doubleField
+      document.getElementById("listField").innerHTML = dartApp.listField
+      document.getElementById("getWisdom1").innerHTML = dartApp.getWisdom(-1)
+      document.getElementById("getWisdom9").innerHTML = dartApp.getWisdom(9)
       document.getElementById("getWisdom99").innerHTML = dartApp.getWisdom(99)
-      document.getElementById("getWisdom40").innerHTML = dartApp.getWisdom(40)
    </script>
+   <br />
+   <h2>Try this</h2>
+   <p>F12 to open Developer Tools, go to the Console, and play with the <code>dartApp</code> object.</p>
 </body>
 
 </html>
