@@ -3053,18 +3053,27 @@
     main__closure18: function main__closure18(t0) {
       this._dartInstance = t0;
     },
+    main__closure19: function main__closure19(t0) {
+      this._dartInstance = t0;
+    },
+    main__closure20: function main__closure20(t0) {
+      this._dartInstance = t0;
+    },
     main_closure: function main_closure() {
     },
     DartApp$() {
-      var t3,
+      var t3, t4, t5, _null = null,
         t1 = A._setArrayType([1, 2, 3], type$.JSArray_int),
         t2 = A.Primitives_valueFromDecomposedDate(2024, 9, 12, 0, 0, 0, 0, 0, false);
       if (t2 == null)
         t2 = 864e14;
       if (t2 === 864e14)
         A.throwExpression(A.ArgumentError$("(2024, 9, 12, 0, 0, 0, 0, 0)"));
-      t3 = $.exampleEntity;
-      return new A.DartApp(t1, new A.DateTime(t2, 0, false), t3, new A.DartMapView(t3, type$.DartMapView_String_dynamic).get$tojs());
+      t3 = $.basicMap;
+      t4 = new A.DartMapView(t3, type$.DartMapView_String_dynamic).get$tojs();
+      t5 = A.JSObjectUnsafeUtilExtension__callMethod(type$.JSObject._as(self.window), "Date", _null, _null, _null, _null);
+      t5.toString;
+      return new A.DartApp(t1, new A.DateTime(t2, 0, false), t3, t4, t5);
     },
     DartMapView: function DartMapView(t0, t1) {
       this._dartMap = t0;
@@ -3084,7 +3093,7 @@
     },
     DartMapView_entries_closure: function DartMapView_entries_closure() {
     },
-    DartApp: function DartApp(t0, t1, t2, t3) {
+    DartApp: function DartApp(t0, t1, t2, t3, t4) {
       var _ = this;
       _.boolField = true;
       _.intField = 42;
@@ -3094,6 +3103,7 @@
       _.weirdDateField = t1;
       _.weirdMapField = t2;
       _.mapView = t3;
+      _.aDate = t4;
     },
     DartApp_factory__closure: function DartApp_factory__closure(t0) {
       this._dartInstance = t0;
@@ -3155,10 +3165,20 @@
     DartApp_factory__closure18: function DartApp_factory__closure18(t0) {
       this._dartInstance = t0;
     },
+    DartApp_factory__closure19: function DartApp_factory__closure19(t0) {
+      this._dartInstance = t0;
+    },
+    DartApp_factory__closure20: function DartApp_factory__closure20(t0) {
+      this._dartInstance = t0;
+    },
     DartApp_factory_closure: function DartApp_factory_closure() {
     },
     throwLateFieldADI(fieldName) {
       A.throwExpressionWithWrapper(new A.LateError("Field '" + fieldName + "' has been assigned during initialization."), new Error());
+    },
+    JSObjectUnsafeUtilExtension__callMethod(_this, method, arg1, arg2, arg3, arg4) {
+      var t1 = _this[method]();
+      return t1;
     },
     _functionToJS0(f) {
       var result;
@@ -3655,19 +3675,19 @@
     call$1(o) {
       return this.getTag(o);
     },
-    $signature: 19
+    $signature: 20
   };
   A.initHooks_closure0.prototype = {
     call$2(o, tag) {
       return this.getUnknownTag(o, tag);
     },
-    $signature: 20
+    $signature: 21
   };
   A.initHooks_closure1.prototype = {
     call$1(tag) {
       return this.prototypeForTag(A._asString(tag));
     },
-    $signature: 21
+    $signature: 22
   };
   A.NativeByteBuffer.prototype = {
     get$runtimeType(receiver) {
@@ -3864,7 +3884,7 @@
       t2 = A.S(v);
       t1._contents += t2;
     },
-    $signature: 22
+    $signature: 23
   };
   A.DateTime.prototype = {
     $eq(_, other) {
@@ -4035,19 +4055,19 @@
     call$0() {
       return true;
     },
-    $signature: 0
+    $signature: 1
   };
   A.main__closure0.prototype = {
     call$0() {
       return "La Dart-Aplika\u0135o";
     },
-    $signature: 1
+    $signature: 2
   };
   A.main__closure1.prototype = {
     call$0() {
       return 48;
     },
-    $signature: 2
+    $signature: 3
   };
   A.main__closure2.prototype = {
     call$0() {
@@ -4059,7 +4079,7 @@
     call$0() {
       return this._dartInstance.boolField;
     },
-    $signature: 0
+    $signature: 1
   };
   A.main__closure4.prototype = {
     call$1(_val) {
@@ -4071,7 +4091,7 @@
     call$0() {
       return this._dartInstance.intField;
     },
-    $signature: 2
+    $signature: 3
   };
   A.main__closure6.prototype = {
     call$1(_val) {
@@ -4095,7 +4115,7 @@
     call$0() {
       return this._dartInstance.stringField;
     },
-    $signature: 1
+    $signature: 2
   };
   A.main__closure10.prototype = {
     call$1(_val) {
@@ -4143,7 +4163,7 @@
     call$0() {
       return this._dartInstance.mapView;
     },
-    $signature: 3
+    $signature: 4
   };
   A.main__closure18.prototype = {
     call$1(_val) {
@@ -4151,9 +4171,21 @@
     },
     $signature: 17
   };
+  A.main__closure19.prototype = {
+    call$0() {
+      return this._dartInstance.aDate;
+    },
+    $signature: 0
+  };
+  A.main__closure20.prototype = {
+    call$1(_val) {
+      this._dartInstance.aDate = type$.Object._as(_val);
+    },
+    $signature: 18
+  };
   A.main_closure.prototype = {
     call$0() {
-      var _boolGetterMapping, _stringGetterMapping, _intGetterMapping, _klassMapping, _boolFieldMapping, _intFieldMapping, _doubleFieldMapping, _stringFieldMapping, _listFieldMapping, _weirdDateFieldMapping, _weirdMapFieldMapping, _mapViewMapping,
+      var _boolGetterMapping, _stringGetterMapping, _intGetterMapping, _klassMapping, _boolFieldMapping, _intFieldMapping, _doubleFieldMapping, _stringFieldMapping, _listFieldMapping, _weirdDateFieldMapping, _weirdMapFieldMapping, _mapViewMapping, _aDateMapping,
         _dartInstance = A.DartApp$(),
         t1 = type$.JSObject,
         t2 = t1._as(self),
@@ -4228,11 +4260,17 @@
       _mapViewMapping = t1._as(t3.create.apply(t3, [null]));
       _mapViewMapping.get = A._functionToJS0(new A.main__closure17(_dartInstance));
       _mapViewMapping.set = A._functionToJS1(new A.main__closure18(_dartInstance));
+      t3 = t1._as(t2.Object);
+      t3.defineProperty.apply(t3, [_jsExporter, "mapView", _mapViewMapping]);
+      t3 = t1._as(t2.Object);
+      _aDateMapping = t1._as(t3.create.apply(t3, [null]));
+      _aDateMapping.get = A._functionToJS0(new A.main__closure19(_dartInstance));
+      _aDateMapping.set = A._functionToJS1(new A.main__closure20(_dartInstance));
       t2 = t1._as(t2.Object);
-      t2.defineProperty.apply(t2, [_jsExporter, "mapView", _mapViewMapping]);
+      t2.defineProperty.apply(t2, [_jsExporter, "aDate", _aDateMapping]);
       return _jsExporter;
     },
-    $signature: 4
+    $signature: 0
   };
   A.DartMapView.prototype = {
     get$tojs() {
@@ -4253,20 +4291,20 @@
         t2 = t1._dartMap;
       return A.List_List$from(new A.LinkedHashMapKeyIterable(t2, t2.$ti._eval$1("LinkedHashMapKeyIterable<1>")), t1.$ti._precomputed1);
     },
-    $signature: 18
+    $signature: 19
   };
   A.DartMapView_tojs__closure0.prototype = {
     call$0() {
       var t1 = this._dartInstance;
       return A.List_List$from(t1._dartMap.get$values(), t1.$ti._rest[1]);
     },
-    $signature: 18
+    $signature: 19
   };
   A.DartMapView_tojs__closure1.prototype = {
     call$0() {
       return this._dartInstance.get$entries();
     },
-    $signature: 23
+    $signature: 24
   };
   A.DartMapView_tojs_closure.prototype = {
     call$0() {
@@ -4294,14 +4332,14 @@
       t2.defineProperty.apply(t2, [_jsExporter, "entries", _entriesMapping]);
       return _jsExporter;
     },
-    $signature: 4
+    $signature: 0
   };
   A.DartMapView_entries_closure.prototype = {
     call$1(e) {
       type$.MapEntry_dynamic_dynamic._as(e);
       return [e.key, e.value];
     },
-    $signature: 24
+    $signature: 25
   };
   A.DartApp.prototype = {
     getWisdom$1(n) {
@@ -4330,19 +4368,19 @@
     call$0() {
       return true;
     },
-    $signature: 0
+    $signature: 1
   };
   A.DartApp_factory__closure0.prototype = {
     call$0() {
       return "La Dart-Aplika\u0135o";
     },
-    $signature: 1
+    $signature: 2
   };
   A.DartApp_factory__closure1.prototype = {
     call$0() {
       return 48;
     },
-    $signature: 2
+    $signature: 3
   };
   A.DartApp_factory__closure2.prototype = {
     call$0() {
@@ -4354,7 +4392,7 @@
     call$0() {
       return this._dartInstance.boolField;
     },
-    $signature: 0
+    $signature: 1
   };
   A.DartApp_factory__closure4.prototype = {
     call$1(_val) {
@@ -4366,7 +4404,7 @@
     call$0() {
       return this._dartInstance.intField;
     },
-    $signature: 2
+    $signature: 3
   };
   A.DartApp_factory__closure6.prototype = {
     call$1(_val) {
@@ -4390,7 +4428,7 @@
     call$0() {
       return this._dartInstance.stringField;
     },
-    $signature: 1
+    $signature: 2
   };
   A.DartApp_factory__closure10.prototype = {
     call$1(_val) {
@@ -4438,7 +4476,7 @@
     call$0() {
       return this._dartInstance.mapView;
     },
-    $signature: 3
+    $signature: 4
   };
   A.DartApp_factory__closure18.prototype = {
     call$1(_val) {
@@ -4446,9 +4484,21 @@
     },
     $signature: 17
   };
+  A.DartApp_factory__closure19.prototype = {
+    call$0() {
+      return this._dartInstance.aDate;
+    },
+    $signature: 0
+  };
+  A.DartApp_factory__closure20.prototype = {
+    call$1(_val) {
+      this._dartInstance.aDate = type$.Object._as(_val);
+    },
+    $signature: 18
+  };
   A.DartApp_factory_closure.prototype = {
     call$0() {
-      var _boolGetterMapping, _stringGetterMapping, _intGetterMapping, _klassMapping, _boolFieldMapping, _intFieldMapping, _doubleFieldMapping, _stringFieldMapping, _listFieldMapping, _weirdDateFieldMapping, _weirdMapFieldMapping, _mapViewMapping,
+      var _boolGetterMapping, _stringGetterMapping, _intGetterMapping, _klassMapping, _boolFieldMapping, _intFieldMapping, _doubleFieldMapping, _stringFieldMapping, _listFieldMapping, _weirdDateFieldMapping, _weirdMapFieldMapping, _mapViewMapping, _aDateMapping,
         _dartInstance = A.DartApp$(),
         t1 = type$.JSObject,
         t2 = t1._as(self),
@@ -4523,11 +4573,17 @@
       _mapViewMapping = t1._as(t3.create.apply(t3, [null]));
       _mapViewMapping.get = A._functionToJS0(new A.DartApp_factory__closure17(_dartInstance));
       _mapViewMapping.set = A._functionToJS1(new A.DartApp_factory__closure18(_dartInstance));
+      t3 = t1._as(t2.Object);
+      t3.defineProperty.apply(t3, [_jsExporter, "mapView", _mapViewMapping]);
+      t3 = t1._as(t2.Object);
+      _aDateMapping = t1._as(t3.create.apply(t3, [null]));
+      _aDateMapping.get = A._functionToJS0(new A.DartApp_factory__closure19(_dartInstance));
+      _aDateMapping.set = A._functionToJS1(new A.DartApp_factory__closure20(_dartInstance));
       t2 = t1._as(t2.Object);
-      t2.defineProperty.apply(t2, [_jsExporter, "mapView", _mapViewMapping]);
+      t2.defineProperty.apply(t2, [_jsExporter, "aDate", _aDateMapping]);
       return _jsExporter;
     },
-    $signature: 4
+    $signature: 0
   };
   (function aliases() {
     var _ = J.LegacyJavaScriptObject.prototype;
@@ -4538,9 +4594,9 @@
       _instance_0_u = hunkHelpers._instance_0u;
     _instance_1_u(A.DartMapView.prototype, "get$get", "$get$1", "2?(Object?)");
     var _;
-    _instance_1_u(_ = A.DartApp.prototype, "get$getWisdom", "getWisdom$1", 25);
-    _instance_0_u(_, "get$factoryWeird", "factoryWeird$0", 26);
-    _instance_0_u(_, "get$factory", "factory$0", 3);
+    _instance_1_u(_ = A.DartApp.prototype, "get$getWisdom", "getWisdom$1", 26);
+    _instance_0_u(_, "get$factoryWeird", "factoryWeird$0", 27);
+    _instance_0_u(_, "get$factory", "factory$0", 4);
   })();
   (function inheritance() {
     var _mixin = hunkHelpers.mixin,
@@ -4556,7 +4612,7 @@
     _inheritMany(A.Error, [A.LateError, A._CyclicInitializationError, A.RuntimeError, A._Error, A.AssertionError, A.TypeError, A.ArgumentError, A.UnsupportedError, A.UnimplementedError, A.ConcurrentModificationError]);
     _inheritMany(A.Iterable, [A.EfficientLengthIterable, A.MappedIterable]);
     _inherit(A.EfficientLengthMappedIterable, A.MappedIterable);
-    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.JsLinkedHashMap_values_closure, A.initHooks_closure, A.initHooks_closure1, A.MapBase_entries_closure, A.main__closure4, A.main__closure6, A.main__closure8, A.main__closure10, A.main__closure12, A.main__closure14, A.main__closure16, A.main__closure18, A.DartMapView_entries_closure, A.DartApp_factory__closure4, A.DartApp_factory__closure6, A.DartApp_factory__closure8, A.DartApp_factory__closure10, A.DartApp_factory__closure12, A.DartApp_factory__closure14, A.DartApp_factory__closure16, A.DartApp_factory__closure18]);
+    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.JsLinkedHashMap_values_closure, A.initHooks_closure, A.initHooks_closure1, A.MapBase_entries_closure, A.main__closure4, A.main__closure6, A.main__closure8, A.main__closure10, A.main__closure12, A.main__closure14, A.main__closure16, A.main__closure18, A.main__closure20, A.DartMapView_entries_closure, A.DartApp_factory__closure4, A.DartApp_factory__closure6, A.DartApp_factory__closure8, A.DartApp_factory__closure10, A.DartApp_factory__closure12, A.DartApp_factory__closure14, A.DartApp_factory__closure16, A.DartApp_factory__closure18, A.DartApp_factory__closure20]);
     _inheritMany(A.TearOffClosure, [A.StaticClosure, A.BoundClosure]);
     _inherit(A.JsLinkedHashMap, A.MapBase);
     _inherit(A.LinkedHashMapKeyIterable, A.EfficientLengthIterable);
@@ -4571,7 +4627,7 @@
     _inheritMany(A.NativeTypedArrayOfInt, [A.NativeInt16List, A.NativeInt32List, A.NativeInt8List, A.NativeUint16List, A.NativeUint32List, A.NativeUint8ClampedList, A.NativeUint8List]);
     _inherit(A._TypeError, A._Error);
     _inheritMany(A.ArgumentError, [A.RangeError, A.IndexError]);
-    _inheritMany(A.Closure0Args, [A.main__closure, A.main__closure0, A.main__closure1, A.main__closure2, A.main__closure3, A.main__closure5, A.main__closure7, A.main__closure9, A.main__closure11, A.main__closure13, A.main__closure15, A.main__closure17, A.main_closure, A.DartMapView_tojs__closure, A.DartMapView_tojs__closure0, A.DartMapView_tojs__closure1, A.DartMapView_tojs_closure, A.DartApp_factory__closure, A.DartApp_factory__closure0, A.DartApp_factory__closure1, A.DartApp_factory__closure2, A.DartApp_factory__closure3, A.DartApp_factory__closure5, A.DartApp_factory__closure7, A.DartApp_factory__closure9, A.DartApp_factory__closure11, A.DartApp_factory__closure13, A.DartApp_factory__closure15, A.DartApp_factory__closure17, A.DartApp_factory_closure]);
+    _inheritMany(A.Closure0Args, [A.main__closure, A.main__closure0, A.main__closure1, A.main__closure2, A.main__closure3, A.main__closure5, A.main__closure7, A.main__closure9, A.main__closure11, A.main__closure13, A.main__closure15, A.main__closure17, A.main__closure19, A.main_closure, A.DartMapView_tojs__closure, A.DartMapView_tojs__closure0, A.DartMapView_tojs__closure1, A.DartMapView_tojs_closure, A.DartApp_factory__closure, A.DartApp_factory__closure0, A.DartApp_factory__closure1, A.DartApp_factory__closure2, A.DartApp_factory__closure3, A.DartApp_factory__closure5, A.DartApp_factory__closure7, A.DartApp_factory__closure9, A.DartApp_factory__closure11, A.DartApp_factory__closure13, A.DartApp_factory__closure15, A.DartApp_factory__closure17, A.DartApp_factory__closure19, A.DartApp_factory_closure]);
     _mixin(A._NativeTypedArrayOfDouble_NativeTypedArray_ListMixin, A.ListBase);
     _mixin(A._NativeTypedArrayOfDouble_NativeTypedArray_ListMixin_FixedLengthListMixin, A.FixedLengthListMixin);
     _mixin(A._NativeTypedArrayOfInt_NativeTypedArray_ListMixin, A.ListBase);
@@ -4581,7 +4637,7 @@
     typeUniverse: {eC: new Map(), tR: {}, eT: {}, tPV: {}, sEA: []},
     mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List", Object: "Object", Map: "Map"},
     mangledNames: {},
-    types: ["bool()", "String()", "int()", "JSObject()", "Object()", "Type()", "~(bool)", "~(int)", "double()", "~(double)", "~(String)", "List<int>()", "~(List<int>)", "DateTime()", "~(DateTime)", "Map<String,@>()", "~(Map<String,@>)", "~(JSObject)", "List<Object?>()", "@(@)", "@(@,String)", "@(String)", "~(Object?,Object?)", "List<List<@>>()", "List<@>(MapEntry<@,@>)", "String(int)", "DartApp()"],
+    types: ["Object()", "bool()", "String()", "int()", "JSObject()", "Type()", "~(bool)", "~(int)", "double()", "~(double)", "~(String)", "List<int>()", "~(List<int>)", "DateTime()", "~(DateTime)", "Map<String,@>()", "~(Map<String,@>)", "~(JSObject)", "~(Object)", "List<Object?>()", "@(@)", "@(@,String)", "@(String)", "~(Object?,Object?)", "List<List<@>>()", "List<@>(MapEntry<@,@>)", "String(int)", "DartApp()"],
     interceptorsByTag: null,
     leafTags: null,
     arrayRti: Symbol("$ti")
@@ -4785,7 +4841,7 @@
     $.dispatchRecordsForInstanceTags = null;
     $.interceptorsForUncacheableTags = null;
     $.initNativeDispatchFlag = null;
-    $.exampleEntity = A.LinkedHashMap_LinkedHashMap$_literal(["age", 8, "name", "Elliott"], type$.String, type$.dynamic);
+    $.basicMap = A.LinkedHashMap_LinkedHashMap$_literal(["age", 8, "name", "Elliott"], type$.String, type$.dynamic);
   })();
   (function lazyInitializers() {
     var _lazyFinal = hunkHelpers.lazyFinal;

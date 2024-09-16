@@ -1,9 +1,8 @@
 // Put public facing types in this file.
 
-import 'dart:js_interop' as js; // contains JS types such as JSAny, JSArray etc.
-// import 'dart:js_interop_unsafe'; // contains window.setProperty()
-
-// import 'package:web/web.dart' as web;
+import 'dart:js_interop' as js;
+import 'dart:js_interop_unsafe' as u;
+import 'package:web/web.dart' as web;
 
 Map<String, dynamic> basicMap = {"age": 8, "name": "Elliott"};
 
@@ -48,7 +47,9 @@ class DartApp {
   // But we can use our proxy class so JS can see the contents of the Dart Map:
   js.JSObject mapView = DartMapView(basicMap).tojs;
 
-  // TODO Set
+  // It's also possible to create a JS object directly.
+  js.JSAny aDate = web.window.callMethod("Date".toJS)!;
+  // This .callMethod(), and others, are provided by dart:js_interop_unsafe.
 
   bool get boolGetter => true;
   String get stringGetter => "La Dart-Aplikaĵo";
@@ -63,6 +64,11 @@ class DartApp {
       return "You are that which you aren't.";
     }
   }
+
+  // TODO Try to consume generator functions from JS
+  // Iterable<js.JSObject> getEntities() sync* {
+  //   yield mapView;
+  // }
 
   // Now we want to allow JS to instantiate DartApp. Try some options:
 
