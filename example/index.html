@@ -18,8 +18,10 @@
    <p>getWisdom(99): <span id="getWisdom99"></span></p>
    <script src="../out/interop.js"></script>
    <script>
+      // Instantiate DartApp using the constructor exposed in main.dart
+      const dartApp = new DartApp();
       // Now you can access the properties in JavaScript:
-      console.log(window.dartApp); // Should log the instance
+      console.log(dartApp); // Should log the instance
       document.getElementById("boolGetter").innerHTML = dartApp.boolGetter
       document.getElementById("stringGetter").innerHTML = dartApp.stringGetter
       document.getElementById("intGetter").innerHTML = dartApp.intGetter
@@ -31,7 +33,10 @@
    </script>
    <br />
    <h2>Try this</h2>
-   <p>F12 to open Developer Tools, go to the Console, and play with the <code>dartApp</code> object.</p>
+   <p>F12 to open Developer Tools, go to the Console, and play with the
+      <code>dartApp</code> object and the
+      <code>DartApp</code> constructor.
+   </p>
 </body>
 
 </html>

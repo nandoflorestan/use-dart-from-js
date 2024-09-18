@@ -79,8 +79,9 @@ class DartApp {
 
   DartApp factoryWeird() => DartApp();
   // This doesn't crash but returns a weird JS object with the innards of
-  // the translated Dart and without the getters.
+  // the transpiled Dart and without the getters.
 
-  // This is the right way to do it:
-  js.JSObject factory() => js.createJSInteropWrapper(DartApp());
+  // This is a good way to make a JS constructor:
+  static js.JSObject factory() => js.createJSInteropWrapper(DartApp());
+  // https://api.dart.dev/stable/3.4.4/dart-js_interop/createJSInteropWrapper.html
 }

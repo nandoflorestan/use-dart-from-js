@@ -2990,77 +2990,6 @@
     StringBuffer: function StringBuffer(t0) {
       this._contents = t0;
     },
-    main() {
-      type$.JSObject._as(self.window).dartApp = new A.main_closure().call$0();
-    },
-    main__closure: function main__closure(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure0: function main__closure0(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure1: function main__closure1(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure2: function main__closure2(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure3: function main__closure3(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure4: function main__closure4(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure5: function main__closure5(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure6: function main__closure6(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure7: function main__closure7(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure8: function main__closure8(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure9: function main__closure9(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure10: function main__closure10(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure11: function main__closure11(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure12: function main__closure12(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure13: function main__closure13(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure14: function main__closure14(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure15: function main__closure15(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure16: function main__closure16(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure17: function main__closure17(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure18: function main__closure18(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure19: function main__closure19(t0) {
-      this._dartInstance = t0;
-    },
-    main__closure20: function main__closure20(t0) {
-      this._dartInstance = t0;
-    },
-    main_closure: function main_closure() {
-    },
     DartApp$() {
       var t3, t4, t5, _null = null,
         t1 = A._setArrayType([1, 2, 3], type$.JSArray_int),
@@ -3074,6 +3003,9 @@
       t5 = A.JSObjectUnsafeUtilExtension__callMethod(type$.JSObject._as(self.window), "Date", _null, _null, _null, _null);
       t5.toString;
       return new A.DartApp(t1, new A.DateTime(t2, 0, false), t3, t4, t5);
+    },
+    DartApp_factory() {
+      return new A.DartApp_factory_closure().call$0();
     },
     DartMapView: function DartMapView(t0, t1) {
       this._dartMap = t0;
@@ -3212,6 +3144,9 @@
       if (A._asInt($length) >= 1)
         return callback.call$1(arg1);
       return callback.call$0();
+    },
+    main() {
+      self.DartApp = A._functionToJS0(A.app_DartApp_factory$closure());
     }
   },
   B = {};
@@ -3675,19 +3610,19 @@
     call$1(o) {
       return this.getTag(o);
     },
-    $signature: 20
+    $signature: 6
   };
   A.initHooks_closure0.prototype = {
     call$2(o, tag) {
       return this.getUnknownTag(o, tag);
     },
-    $signature: 21
+    $signature: 7
   };
   A.initHooks_closure1.prototype = {
     call$1(tag) {
       return this.prototypeForTag(A._asString(tag));
     },
-    $signature: 22
+    $signature: 8
   };
   A.NativeByteBuffer.prototype = {
     get$runtimeType(receiver) {
@@ -3884,7 +3819,7 @@
       t2 = A.S(v);
       t1._contents += t2;
     },
-    $signature: 23
+    $signature: 9
   };
   A.DateTime.prototype = {
     $eq(_, other) {
@@ -4051,227 +3986,6 @@
       return t1.charCodeAt(0) == 0 ? t1 : t1;
     }
   };
-  A.main__closure.prototype = {
-    call$0() {
-      return true;
-    },
-    $signature: 1
-  };
-  A.main__closure0.prototype = {
-    call$0() {
-      return "La Dart-Aplika\u0135o";
-    },
-    $signature: 2
-  };
-  A.main__closure1.prototype = {
-    call$0() {
-      return 48;
-    },
-    $signature: 3
-  };
-  A.main__closure2.prototype = {
-    call$0() {
-      return B.Type_DartApp_UUC;
-    },
-    $signature: 5
-  };
-  A.main__closure3.prototype = {
-    call$0() {
-      return this._dartInstance.boolField;
-    },
-    $signature: 1
-  };
-  A.main__closure4.prototype = {
-    call$1(_val) {
-      this._dartInstance.boolField = A._asBool(_val);
-    },
-    $signature: 6
-  };
-  A.main__closure5.prototype = {
-    call$0() {
-      return this._dartInstance.intField;
-    },
-    $signature: 3
-  };
-  A.main__closure6.prototype = {
-    call$1(_val) {
-      this._dartInstance.intField = A._asInt(_val);
-    },
-    $signature: 7
-  };
-  A.main__closure7.prototype = {
-    call$0() {
-      return this._dartInstance.doubleField;
-    },
-    $signature: 8
-  };
-  A.main__closure8.prototype = {
-    call$1(_val) {
-      this._dartInstance.doubleField = A._asDouble(_val);
-    },
-    $signature: 9
-  };
-  A.main__closure9.prototype = {
-    call$0() {
-      return this._dartInstance.stringField;
-    },
-    $signature: 2
-  };
-  A.main__closure10.prototype = {
-    call$1(_val) {
-      this._dartInstance.stringField = A._asString(_val);
-    },
-    $signature: 10
-  };
-  A.main__closure11.prototype = {
-    call$0() {
-      return this._dartInstance.listField;
-    },
-    $signature: 11
-  };
-  A.main__closure12.prototype = {
-    call$1(_val) {
-      this._dartInstance.set$listField(type$.List_int._as(_val));
-    },
-    $signature: 12
-  };
-  A.main__closure13.prototype = {
-    call$0() {
-      return this._dartInstance.weirdDateField;
-    },
-    $signature: 13
-  };
-  A.main__closure14.prototype = {
-    call$1(_val) {
-      this._dartInstance.weirdDateField = type$.DateTime._as(_val);
-    },
-    $signature: 14
-  };
-  A.main__closure15.prototype = {
-    call$0() {
-      return this._dartInstance.weirdMapField;
-    },
-    $signature: 15
-  };
-  A.main__closure16.prototype = {
-    call$1(_val) {
-      this._dartInstance.set$weirdMapField(type$.Map_String_dynamic._as(_val));
-    },
-    $signature: 16
-  };
-  A.main__closure17.prototype = {
-    call$0() {
-      return this._dartInstance.mapView;
-    },
-    $signature: 4
-  };
-  A.main__closure18.prototype = {
-    call$1(_val) {
-      this._dartInstance.mapView = type$.JSObject._as(_val);
-    },
-    $signature: 17
-  };
-  A.main__closure19.prototype = {
-    call$0() {
-      return this._dartInstance.aDate;
-    },
-    $signature: 0
-  };
-  A.main__closure20.prototype = {
-    call$1(_val) {
-      this._dartInstance.aDate = type$.Object._as(_val);
-    },
-    $signature: 18
-  };
-  A.main_closure.prototype = {
-    call$0() {
-      var _boolGetterMapping, _stringGetterMapping, _intGetterMapping, _klassMapping, _boolFieldMapping, _intFieldMapping, _doubleFieldMapping, _stringFieldMapping, _listFieldMapping, _weirdDateFieldMapping, _weirdMapFieldMapping, _mapViewMapping, _aDateMapping,
-        _dartInstance = A.DartApp$(),
-        t1 = type$.JSObject,
-        t2 = t1._as(self),
-        t3 = t1._as(t2.Object),
-        _jsExporter = t1._as(t3.create.apply(t3, [null]));
-      t3 = t1._as(t2.Object);
-      _boolGetterMapping = t1._as(t3.create.apply(t3, [null]));
-      _boolGetterMapping.get = A._functionToJS0(new A.main__closure(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "boolGetter", _boolGetterMapping]);
-      t3 = t1._as(t2.Object);
-      _stringGetterMapping = t1._as(t3.create.apply(t3, [null]));
-      _stringGetterMapping.get = A._functionToJS0(new A.main__closure0(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "stringGetter", _stringGetterMapping]);
-      t3 = t1._as(t2.Object);
-      _intGetterMapping = t1._as(t3.create.apply(t3, [null]));
-      _intGetterMapping.get = A._functionToJS0(new A.main__closure1(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "intGetter", _intGetterMapping]);
-      _jsExporter.getWisdom = A._functionToJS1(_dartInstance.get$getWisdom());
-      t3 = t1._as(t2.Object);
-      _klassMapping = t1._as(t3.create.apply(t3, [null]));
-      _klassMapping.get = A._functionToJS0(new A.main__closure2(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "klass", _klassMapping]);
-      _jsExporter.factoryWeird = A._functionToJS0(_dartInstance.get$factoryWeird());
-      _jsExporter.factory = A._functionToJS0(_dartInstance.get$factory());
-      t3 = t1._as(t2.Object);
-      _boolFieldMapping = t1._as(t3.create.apply(t3, [null]));
-      _boolFieldMapping.get = A._functionToJS0(new A.main__closure3(_dartInstance));
-      _boolFieldMapping.set = A._functionToJS1(new A.main__closure4(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "boolField", _boolFieldMapping]);
-      t3 = t1._as(t2.Object);
-      _intFieldMapping = t1._as(t3.create.apply(t3, [null]));
-      _intFieldMapping.get = A._functionToJS0(new A.main__closure5(_dartInstance));
-      _intFieldMapping.set = A._functionToJS1(new A.main__closure6(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "intField", _intFieldMapping]);
-      t3 = t1._as(t2.Object);
-      _doubleFieldMapping = t1._as(t3.create.apply(t3, [null]));
-      _doubleFieldMapping.get = A._functionToJS0(new A.main__closure7(_dartInstance));
-      _doubleFieldMapping.set = A._functionToJS1(new A.main__closure8(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "doubleField", _doubleFieldMapping]);
-      t3 = t1._as(t2.Object);
-      _stringFieldMapping = t1._as(t3.create.apply(t3, [null]));
-      _stringFieldMapping.get = A._functionToJS0(new A.main__closure9(_dartInstance));
-      _stringFieldMapping.set = A._functionToJS1(new A.main__closure10(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "stringField", _stringFieldMapping]);
-      t3 = t1._as(t2.Object);
-      _listFieldMapping = t1._as(t3.create.apply(t3, [null]));
-      _listFieldMapping.get = A._functionToJS0(new A.main__closure11(_dartInstance));
-      _listFieldMapping.set = A._functionToJS1(new A.main__closure12(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "listField", _listFieldMapping]);
-      t3 = t1._as(t2.Object);
-      _weirdDateFieldMapping = t1._as(t3.create.apply(t3, [null]));
-      _weirdDateFieldMapping.get = A._functionToJS0(new A.main__closure13(_dartInstance));
-      _weirdDateFieldMapping.set = A._functionToJS1(new A.main__closure14(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "weirdDateField", _weirdDateFieldMapping]);
-      t3 = t1._as(t2.Object);
-      _weirdMapFieldMapping = t1._as(t3.create.apply(t3, [null]));
-      _weirdMapFieldMapping.get = A._functionToJS0(new A.main__closure15(_dartInstance));
-      _weirdMapFieldMapping.set = A._functionToJS1(new A.main__closure16(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "weirdMapField", _weirdMapFieldMapping]);
-      t3 = t1._as(t2.Object);
-      _mapViewMapping = t1._as(t3.create.apply(t3, [null]));
-      _mapViewMapping.get = A._functionToJS0(new A.main__closure17(_dartInstance));
-      _mapViewMapping.set = A._functionToJS1(new A.main__closure18(_dartInstance));
-      t3 = t1._as(t2.Object);
-      t3.defineProperty.apply(t3, [_jsExporter, "mapView", _mapViewMapping]);
-      t3 = t1._as(t2.Object);
-      _aDateMapping = t1._as(t3.create.apply(t3, [null]));
-      _aDateMapping.get = A._functionToJS0(new A.main__closure19(_dartInstance));
-      _aDateMapping.set = A._functionToJS1(new A.main__closure20(_dartInstance));
-      t2 = t1._as(t2.Object);
-      t2.defineProperty.apply(t2, [_jsExporter, "aDate", _aDateMapping]);
-      return _jsExporter;
-    },
-    $signature: 0
-  };
   A.DartMapView.prototype = {
     get$tojs() {
       return new A.DartMapView_tojs_closure(this).call$0();
@@ -4291,20 +4005,20 @@
         t2 = t1._dartMap;
       return A.List_List$from(new A.LinkedHashMapKeyIterable(t2, t2.$ti._eval$1("LinkedHashMapKeyIterable<1>")), t1.$ti._precomputed1);
     },
-    $signature: 19
+    $signature: 1
   };
   A.DartMapView_tojs__closure0.prototype = {
     call$0() {
       var t1 = this._dartInstance;
       return A.List_List$from(t1._dartMap.get$values(), t1.$ti._rest[1]);
     },
-    $signature: 19
+    $signature: 1
   };
   A.DartMapView_tojs__closure1.prototype = {
     call$0() {
       return this._dartInstance.get$entries();
     },
-    $signature: 24
+    $signature: 10
   };
   A.DartMapView_tojs_closure.prototype = {
     call$0() {
@@ -4339,7 +4053,7 @@
       type$.MapEntry_dynamic_dynamic._as(e);
       return [e.key, e.value];
     },
-    $signature: 25
+    $signature: 11
   };
   A.DartApp.prototype = {
     getWisdom$1(n) {
@@ -4354,9 +4068,6 @@
     factoryWeird$0() {
       return A.DartApp$();
     },
-    factory$0() {
-      return new A.DartApp_factory_closure().call$0();
-    },
     set$listField(listField) {
       this.listField = type$.List_int._as(listField);
     },
@@ -4368,121 +4079,121 @@
     call$0() {
       return true;
     },
-    $signature: 1
+    $signature: 2
   };
   A.DartApp_factory__closure0.prototype = {
     call$0() {
       return "La Dart-Aplika\u0135o";
     },
-    $signature: 2
+    $signature: 3
   };
   A.DartApp_factory__closure1.prototype = {
     call$0() {
       return 48;
     },
-    $signature: 3
+    $signature: 4
   };
   A.DartApp_factory__closure2.prototype = {
     call$0() {
       return B.Type_DartApp_UUC;
     },
-    $signature: 5
+    $signature: 14
   };
   A.DartApp_factory__closure3.prototype = {
     call$0() {
       return this._dartInstance.boolField;
     },
-    $signature: 1
+    $signature: 2
   };
   A.DartApp_factory__closure4.prototype = {
     call$1(_val) {
       this._dartInstance.boolField = A._asBool(_val);
     },
-    $signature: 6
+    $signature: 15
   };
   A.DartApp_factory__closure5.prototype = {
     call$0() {
       return this._dartInstance.intField;
     },
-    $signature: 3
+    $signature: 4
   };
   A.DartApp_factory__closure6.prototype = {
     call$1(_val) {
       this._dartInstance.intField = A._asInt(_val);
     },
-    $signature: 7
+    $signature: 16
   };
   A.DartApp_factory__closure7.prototype = {
     call$0() {
       return this._dartInstance.doubleField;
     },
-    $signature: 8
+    $signature: 17
   };
   A.DartApp_factory__closure8.prototype = {
     call$1(_val) {
       this._dartInstance.doubleField = A._asDouble(_val);
     },
-    $signature: 9
+    $signature: 18
   };
   A.DartApp_factory__closure9.prototype = {
     call$0() {
       return this._dartInstance.stringField;
     },
-    $signature: 2
+    $signature: 3
   };
   A.DartApp_factory__closure10.prototype = {
     call$1(_val) {
       this._dartInstance.stringField = A._asString(_val);
     },
-    $signature: 10
+    $signature: 19
   };
   A.DartApp_factory__closure11.prototype = {
     call$0() {
       return this._dartInstance.listField;
     },
-    $signature: 11
+    $signature: 20
   };
   A.DartApp_factory__closure12.prototype = {
     call$1(_val) {
       this._dartInstance.set$listField(type$.List_int._as(_val));
     },
-    $signature: 12
+    $signature: 21
   };
   A.DartApp_factory__closure13.prototype = {
     call$0() {
       return this._dartInstance.weirdDateField;
     },
-    $signature: 13
+    $signature: 22
   };
   A.DartApp_factory__closure14.prototype = {
     call$1(_val) {
       this._dartInstance.weirdDateField = type$.DateTime._as(_val);
     },
-    $signature: 14
+    $signature: 23
   };
   A.DartApp_factory__closure15.prototype = {
     call$0() {
       return this._dartInstance.weirdMapField;
     },
-    $signature: 15
+    $signature: 24
   };
   A.DartApp_factory__closure16.prototype = {
     call$1(_val) {
       this._dartInstance.set$weirdMapField(type$.Map_String_dynamic._as(_val));
     },
-    $signature: 16
+    $signature: 25
   };
   A.DartApp_factory__closure17.prototype = {
     call$0() {
       return this._dartInstance.mapView;
     },
-    $signature: 4
+    $signature: 5
   };
   A.DartApp_factory__closure18.prototype = {
     call$1(_val) {
       this._dartInstance.mapView = type$.JSObject._as(_val);
     },
-    $signature: 17
+    $signature: 26
   };
   A.DartApp_factory__closure19.prototype = {
     call$0() {
@@ -4494,7 +4205,7 @@
     call$1(_val) {
       this._dartInstance.aDate = type$.Object._as(_val);
     },
-    $signature: 18
+    $signature: 27
   };
   A.DartApp_factory_closure.prototype = {
     call$0() {
@@ -4526,7 +4237,6 @@
       t3 = t1._as(t2.Object);
       t3.defineProperty.apply(t3, [_jsExporter, "klass", _klassMapping]);
       _jsExporter.factoryWeird = A._functionToJS0(_dartInstance.get$factoryWeird());
-      _jsExporter.factory = A._functionToJS0(_dartInstance.get$factory());
       t3 = t1._as(t2.Object);
       _boolFieldMapping = t1._as(t3.create.apply(t3, [null]));
       _boolFieldMapping.get = A._functionToJS0(new A.DartApp_factory__closure3(_dartInstance));
@@ -4590,13 +4300,14 @@
     _.super$LegacyJavaScriptObject$toString = _.toString$0;
   })();
   (function installTearOffs() {
-    var _instance_1_u = hunkHelpers._instance_1u,
+    var _static_0 = hunkHelpers._static_0,
+      _instance_1_u = hunkHelpers._instance_1u,
       _instance_0_u = hunkHelpers._instance_0u;
+    _static_0(A, "app_DartApp_factory$closure", "DartApp_factory", 5);
     _instance_1_u(A.DartMapView.prototype, "get$get", "$get$1", "2?(Object?)");
     var _;
-    _instance_1_u(_ = A.DartApp.prototype, "get$getWisdom", "getWisdom$1", 26);
-    _instance_0_u(_, "get$factoryWeird", "factoryWeird$0", 27);
-    _instance_0_u(_, "get$factory", "factory$0", 4);
+    _instance_1_u(_ = A.DartApp.prototype, "get$getWisdom", "getWisdom$1", 12);
+    _instance_0_u(_, "get$factoryWeird", "factoryWeird$0", 13);
   })();
   (function inheritance() {
     var _mixin = hunkHelpers.mixin,
@@ -4612,7 +4323,7 @@
     _inheritMany(A.Error, [A.LateError, A._CyclicInitializationError, A.RuntimeError, A._Error, A.AssertionError, A.TypeError, A.ArgumentError, A.UnsupportedError, A.UnimplementedError, A.ConcurrentModificationError]);
     _inheritMany(A.Iterable, [A.EfficientLengthIterable, A.MappedIterable]);
     _inherit(A.EfficientLengthMappedIterable, A.MappedIterable);
-    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.JsLinkedHashMap_values_closure, A.initHooks_closure, A.initHooks_closure1, A.MapBase_entries_closure, A.main__closure4, A.main__closure6, A.main__closure8, A.main__closure10, A.main__closure12, A.main__closure14, A.main__closure16, A.main__closure18, A.main__closure20, A.DartMapView_entries_closure, A.DartApp_factory__closure4, A.DartApp_factory__closure6, A.DartApp_factory__closure8, A.DartApp_factory__closure10, A.DartApp_factory__closure12, A.DartApp_factory__closure14, A.DartApp_factory__closure16, A.DartApp_factory__closure18, A.DartApp_factory__closure20]);
+    _inheritMany(A.Closure, [A.Closure0Args, A.Closure2Args, A.TearOffClosure, A.JsLinkedHashMap_values_closure, A.initHooks_closure, A.initHooks_closure1, A.MapBase_entries_closure, A.DartMapView_entries_closure, A.DartApp_factory__closure4, A.DartApp_factory__closure6, A.DartApp_factory__closure8, A.DartApp_factory__closure10, A.DartApp_factory__closure12, A.DartApp_factory__closure14, A.DartApp_factory__closure16, A.DartApp_factory__closure18, A.DartApp_factory__closure20]);
     _inheritMany(A.TearOffClosure, [A.StaticClosure, A.BoundClosure]);
     _inherit(A.JsLinkedHashMap, A.MapBase);
     _inherit(A.LinkedHashMapKeyIterable, A.EfficientLengthIterable);
@@ -4627,7 +4338,7 @@
     _inheritMany(A.NativeTypedArrayOfInt, [A.NativeInt16List, A.NativeInt32List, A.NativeInt8List, A.NativeUint16List, A.NativeUint32List, A.NativeUint8ClampedList, A.NativeUint8List]);
     _inherit(A._TypeError, A._Error);
     _inheritMany(A.ArgumentError, [A.RangeError, A.IndexError]);
-    _inheritMany(A.Closure0Args, [A.main__closure, A.main__closure0, A.main__closure1, A.main__closure2, A.main__closure3, A.main__closure5, A.main__closure7, A.main__closure9, A.main__closure11, A.main__closure13, A.main__closure15, A.main__closure17, A.main__closure19, A.main_closure, A.DartMapView_tojs__closure, A.DartMapView_tojs__closure0, A.DartMapView_tojs__closure1, A.DartMapView_tojs_closure, A.DartApp_factory__closure, A.DartApp_factory__closure0, A.DartApp_factory__closure1, A.DartApp_factory__closure2, A.DartApp_factory__closure3, A.DartApp_factory__closure5, A.DartApp_factory__closure7, A.DartApp_factory__closure9, A.DartApp_factory__closure11, A.DartApp_factory__closure13, A.DartApp_factory__closure15, A.DartApp_factory__closure17, A.DartApp_factory__closure19, A.DartApp_factory_closure]);
+    _inheritMany(A.Closure0Args, [A.DartMapView_tojs__closure, A.DartMapView_tojs__closure0, A.DartMapView_tojs__closure1, A.DartMapView_tojs_closure, A.DartApp_factory__closure, A.DartApp_factory__closure0, A.DartApp_factory__closure1, A.DartApp_factory__closure2, A.DartApp_factory__closure3, A.DartApp_factory__closure5, A.DartApp_factory__closure7, A.DartApp_factory__closure9, A.DartApp_factory__closure11, A.DartApp_factory__closure13, A.DartApp_factory__closure15, A.DartApp_factory__closure17, A.DartApp_factory__closure19, A.DartApp_factory_closure]);
     _mixin(A._NativeTypedArrayOfDouble_NativeTypedArray_ListMixin, A.ListBase);
     _mixin(A._NativeTypedArrayOfDouble_NativeTypedArray_ListMixin_FixedLengthListMixin, A.FixedLengthListMixin);
     _mixin(A._NativeTypedArrayOfInt_NativeTypedArray_ListMixin, A.ListBase);
@@ -4637,12 +4348,12 @@
     typeUniverse: {eC: new Map(), tR: {}, eT: {}, tPV: {}, sEA: []},
     mangledGlobalNames: {int: "int", double: "double", num: "num", String: "String", bool: "bool", Null: "Null", List: "List", Object: "Object", Map: "Map"},
     mangledNames: {},
-    types: ["Object()", "bool()", "String()", "int()", "JSObject()", "Type()", "~(bool)", "~(int)", "double()", "~(double)", "~(String)", "List<int>()", "~(List<int>)", "DateTime()", "~(DateTime)", "Map<String,@>()", "~(Map<String,@>)", "~(JSObject)", "~(Object)", "List<Object?>()", "@(@)", "@(@,String)", "@(String)", "~(Object?,Object?)", "List<List<@>>()", "List<@>(MapEntry<@,@>)", "String(int)", "DartApp()"],
+    types: ["Object()", "List<Object?>()", "bool()", "String()", "int()", "JSObject()", "@(@)", "@(@,String)", "@(String)", "~(Object?,Object?)", "List<List<@>>()", "List<@>(MapEntry<@,@>)", "String(int)", "DartApp()", "Type()", "~(bool)", "~(int)", "double()", "~(double)", "~(String)", "List<int>()", "~(List<int>)", "DateTime()", "~(DateTime)", "Map<String,@>()", "~(Map<String,@>)", "~(JSObject)", "~(Object)"],
     interceptorsByTag: null,
     leafTags: null,
     arrayRti: Symbol("$ti")
   };
-  A._Universe_addRules(init.typeUniverse, JSON.parse('{"PlainJavaScriptObject":"LegacyJavaScriptObject","UnknownJavaScriptObject":"LegacyJavaScriptObject","JavaScriptFunction":"LegacyJavaScriptObject","JSBool":{"bool":[],"TrustedGetRuntimeType":[]},"JSNull":{"TrustedGetRuntimeType":[]},"JavaScriptObject":{"JSObject":[]},"LegacyJavaScriptObject":{"JSObject":[]},"JSArray":{"List":["1"],"EfficientLengthIterable":["1"],"JSObject":[],"Iterable":["1"]},"JSUnmodifiableArray":{"JSArray":["1"],"List":["1"],"EfficientLengthIterable":["1"],"JSObject":[],"Iterable":["1"]},"ArrayIterator":{"Iterator":["1"]},"JSNumber":{"double":[],"num":[]},"JSInt":{"double":[],"int":[],"num":[],"TrustedGetRuntimeType":[]},"JSNumNotInt":{"double":[],"num":[],"TrustedGetRuntimeType":[]},"JSString":{"String":[],"TrustedGetRuntimeType":[]},"EfficientLengthIterable":{"Iterable":["1"]},"ListIterator":{"Iterator":["1"]},"MappedIterable":{"Iterable":["2"],"Iterable.E":"2"},"EfficientLengthMappedIterable":{"MappedIterable":["1","2"],"EfficientLengthIterable":["2"],"Iterable":["2"],"Iterable.E":"2"},"MappedIterator":{"Iterator":["2"]},"Closure":{"Function":[]},"Closure0Args":{"Function":[]},"Closure2Args":{"Function":[]},"TearOffClosure":{"Function":[]},"StaticClosure":{"Function":[]},"BoundClosure":{"Function":[]},"JsLinkedHashMap":{"MapBase":["1","2"],"LinkedHashMap":["1","2"],"Map":["1","2"]},"LinkedHashMapKeyIterable":{"EfficientLengthIterable":["1"],"Iterable":["1"],"Iterable.E":"1"},"LinkedHashMapKeyIterator":{"Iterator":["1"]},"NativeByteBuffer":{"JSObject":[],"TrustedGetRuntimeType":[]},"NativeTypedData":{"JSObject":[]},"NativeByteData":{"JSObject":[],"TrustedGetRuntimeType":[]},"NativeTypedArray":{"JavaScriptIndexingBehavior":["1"],"JSObject":[]},"NativeTypedArrayOfDouble":{"ListBase":["double"],"List":["double"],"JavaScriptIndexingBehavior":["double"],"EfficientLengthIterable":["double"],"JSObject":[],"Iterable":["double"],"FixedLengthListMixin":["double"]},"NativeTypedArrayOfInt":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"]},"NativeFloat32List":{"ListBase":["double"],"List":["double"],"JavaScriptIndexingBehavior":["double"],"EfficientLengthIterable":["double"],"JSObject":[],"Iterable":["double"],"FixedLengthListMixin":["double"],"TrustedGetRuntimeType":[],"ListBase.E":"double"},"NativeFloat64List":{"ListBase":["double"],"List":["double"],"JavaScriptIndexingBehavior":["double"],"EfficientLengthIterable":["double"],"JSObject":[],"Iterable":["double"],"FixedLengthListMixin":["double"],"TrustedGetRuntimeType":[],"ListBase.E":"double"},"NativeInt16List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeInt32List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeInt8List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint16List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint32List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint8ClampedList":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint8List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"MapBase":{"Map":["1","2"]},"double":{"num":[]},"int":{"num":[]},"List":{"EfficientLengthIterable":["1"],"Iterable":["1"]},"Int8List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint8List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint8ClampedList":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Int16List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint16List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Int32List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint32List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Float32List":{"List":["double"],"EfficientLengthIterable":["double"],"Iterable":["double"]},"Float64List":{"List":["double"],"EfficientLengthIterable":["double"],"Iterable":["double"]}}'));
+  A._Universe_addRules(init.typeUniverse, JSON.parse('{"JavaScriptFunction":"LegacyJavaScriptObject","PlainJavaScriptObject":"LegacyJavaScriptObject","UnknownJavaScriptObject":"LegacyJavaScriptObject","JSBool":{"bool":[],"TrustedGetRuntimeType":[]},"JSNull":{"TrustedGetRuntimeType":[]},"JavaScriptObject":{"JSObject":[]},"LegacyJavaScriptObject":{"JSObject":[]},"JSArray":{"List":["1"],"EfficientLengthIterable":["1"],"JSObject":[],"Iterable":["1"]},"JSUnmodifiableArray":{"JSArray":["1"],"List":["1"],"EfficientLengthIterable":["1"],"JSObject":[],"Iterable":["1"]},"ArrayIterator":{"Iterator":["1"]},"JSNumber":{"double":[],"num":[]},"JSInt":{"double":[],"int":[],"num":[],"TrustedGetRuntimeType":[]},"JSNumNotInt":{"double":[],"num":[],"TrustedGetRuntimeType":[]},"JSString":{"String":[],"TrustedGetRuntimeType":[]},"EfficientLengthIterable":{"Iterable":["1"]},"ListIterator":{"Iterator":["1"]},"MappedIterable":{"Iterable":["2"],"Iterable.E":"2"},"EfficientLengthMappedIterable":{"MappedIterable":["1","2"],"EfficientLengthIterable":["2"],"Iterable":["2"],"Iterable.E":"2"},"MappedIterator":{"Iterator":["2"]},"Closure":{"Function":[]},"Closure0Args":{"Function":[]},"Closure2Args":{"Function":[]},"TearOffClosure":{"Function":[]},"StaticClosure":{"Function":[]},"BoundClosure":{"Function":[]},"JsLinkedHashMap":{"MapBase":["1","2"],"LinkedHashMap":["1","2"],"Map":["1","2"]},"LinkedHashMapKeyIterable":{"EfficientLengthIterable":["1"],"Iterable":["1"],"Iterable.E":"1"},"LinkedHashMapKeyIterator":{"Iterator":["1"]},"NativeByteBuffer":{"JSObject":[],"TrustedGetRuntimeType":[]},"NativeTypedData":{"JSObject":[]},"NativeByteData":{"JSObject":[],"TrustedGetRuntimeType":[]},"NativeTypedArray":{"JavaScriptIndexingBehavior":["1"],"JSObject":[]},"NativeTypedArrayOfDouble":{"ListBase":["double"],"List":["double"],"JavaScriptIndexingBehavior":["double"],"EfficientLengthIterable":["double"],"JSObject":[],"Iterable":["double"],"FixedLengthListMixin":["double"]},"NativeTypedArrayOfInt":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"]},"NativeFloat32List":{"ListBase":["double"],"List":["double"],"JavaScriptIndexingBehavior":["double"],"EfficientLengthIterable":["double"],"JSObject":[],"Iterable":["double"],"FixedLengthListMixin":["double"],"TrustedGetRuntimeType":[],"ListBase.E":"double"},"NativeFloat64List":{"ListBase":["double"],"List":["double"],"JavaScriptIndexingBehavior":["double"],"EfficientLengthIterable":["double"],"JSObject":[],"Iterable":["double"],"FixedLengthListMixin":["double"],"TrustedGetRuntimeType":[],"ListBase.E":"double"},"NativeInt16List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeInt32List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeInt8List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint16List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint32List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint8ClampedList":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"NativeUint8List":{"ListBase":["int"],"List":["int"],"JavaScriptIndexingBehavior":["int"],"EfficientLengthIterable":["int"],"JSObject":[],"Iterable":["int"],"FixedLengthListMixin":["int"],"TrustedGetRuntimeType":[],"ListBase.E":"int"},"MapBase":{"Map":["1","2"]},"double":{"num":[]},"int":{"num":[]},"List":{"EfficientLengthIterable":["1"],"Iterable":["1"]},"Int8List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint8List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint8ClampedList":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Int16List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint16List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Int32List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Uint32List":{"List":["int"],"EfficientLengthIterable":["int"],"Iterable":["int"]},"Float32List":{"List":["double"],"EfficientLengthIterable":["double"],"Iterable":["double"]},"Float64List":{"List":["double"],"EfficientLengthIterable":["double"],"Iterable":["double"]}}'));
   A._Universe_addErasedTypes(init.typeUniverse, JSON.parse('{"EfficientLengthIterable":1,"NativeTypedArray":1}'));
   var type$ = (function rtii() {
     var findType = A.findType;
