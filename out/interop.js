@@ -4071,7 +4071,7 @@
   };
   A.main__closure2.prototype = {
     call$0() {
-      return B.Type_DartApp_qC7;
+      return B.Type_DartApp_UUC;
     },
     $signature: 5
   };
@@ -4384,7 +4384,7 @@
   };
   A.DartApp_factory__closure2.prototype = {
     call$0() {
-      return B.Type_DartApp_qC7;
+      return B.Type_DartApp_UUC;
     },
     $signature: 5
   };
@@ -4817,7 +4817,7 @@
     B.C_SentinelValue = new A.SentinelValue();
     B.Type_ByteBuffer_EOZ = A.typeLiteral("ByteBuffer");
     B.Type_ByteData_mF8 = A.typeLiteral("ByteData");
-    B.Type_DartApp_qC7 = A.typeLiteral("DartApp");
+    B.Type_DartApp_UUC = A.typeLiteral("DartApp");
     B.Type_Float32List_Ymk = A.typeLiteral("Float32List");
     B.Type_Float64List_Ymk = A.typeLiteral("Float64List");
     B.Type_Int16List_cot = A.typeLiteral("Int16List");
@@ -4922,4 +4922,4 @@
   });
 })();
 
-//# sourceMappingURL=dauri.js.map
+//# sourceMappingURL=interop.js.map
